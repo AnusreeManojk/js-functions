@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Tricks!</title>
+</head>
+<body>
+    <p onclick="makeGreen()">×BREAK×DOWN×</p>
+    <script>
+        const dogs=[
+            {name:'Snickers',age:2},
+            {name:'hugo',age:8}
+        ]
+        function makeGreen(){
+            p.style.color="BADA55";
+            p.style.fontSize='50px'
+        }
+        // regular
+        console.log("Hello Iam a %s string",'💪')
+        // styled
+        console.log('%c Iam some great text','font-size:50px;background:aqua')
+        // warning
+        console.warn('OH NOOO')
+        // error
+        console.error("Shit!")
+        // info
+        console.info('Crocodile eat 3-4 people per year')
+    </script>
+</body>
+</html>
