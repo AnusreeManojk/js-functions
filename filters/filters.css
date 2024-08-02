@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color: #f5f8ff;
+
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto
+}
+#search-container input{
+background-color: transparent;
+width: 40%;
+border-bottom: 2px solid #110f29;
+padding: 16px 5px;
+}#search-container input:focus{
+ border-bottom-color:#6759ff ;
+}
+#search-container button{
+    padding:  16px 32px;
+    margin-left: 16px;
+    background-color:#6759ff ;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+#buttons{
+    margin-top: 16px;
+}
+#buttons button{
+    border:2px solid #6759ff;
+    padding: 16px 36px;
+    border-radius: 48px;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+}
+.active{
+    background-color:#6759ff ;
+    color: #fff;
+}
+#products{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-column-gap:24px ;
+    padding: 32px 0;
+}
+.card{
+    background-color: #ffff;
+    max-width: 288px;
+    margin-top:16px ;
+    padding:16px ;
+    border-radius:5px ;
+    box-shadow: 16px 32px 40px rgba(1,2,68,0.08) ;
+}
+.image-container{
+    text-align: center;
+
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+    height:240px ;
+}
+
+.container{
+    padding-top:16px ;
+    color: #110f29;
+}
+.container h5{
+    font-weight: 500;
+}
+@media screen and(max-width:720px) {
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 160px;
+    }
+    .card{
+        max-width:160px;
+        margin-top: 16px;
+    }
+    .products{
+        grid-template-columns: auto auto;
+        grid-column-gap:16px ;
+    }
+    .hide{
+        display: none;
+    }
+}
